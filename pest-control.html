@@ -1,0 +1,186 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+```
+<title>Agri Hub | Pest Control & IPM Strategies</title>
+
+<meta
+  name="description"
+  content="Learn about common crop pests and diseases, preventive measures, biological controls, integrated pest management, and organic solutions."
+/>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link
+  href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.css"
+  rel="stylesheet"
+/>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;600;700;800&display=swap"
+  rel="stylesheet"
+/>
+
+<style>
+  body {
+    font-family: "Space Mono", sans-serif;
+    background: #fafaf9;
+  }
+
+  .btn-success,
+  .btn-primary {
+    background: #000000;
+    border-color: #000000;
+    color: #ffffff;
+  }
+
+  .btn-outline.btn-success {
+    background: transparent;
+    color: #000000;
+  }
+
+  .btn-outline.btn-success:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+
+  * {
+    border-radius: 0 !important;
+  }
+</style>
+```
+
+  </head>
+
+  <body class="bg-base-100">
+
+```
+<!-- Navbar -->
+<div class="navbar bg-base-100 shadow-md sticky top-0 z-50">
+
+  <div class="navbar-start">
+
+    <div class="dropdown">
+
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        Menu
+      </div>
+
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 w-52"
+      >
+        <li><a href="index.html">Home</a></li>
+        <li><a href="farming-guides.html">Farming Guides</a></li>
+        <li><a href="crop-details.html">Crop Details</a></li>
+        <li><a href="pest-control.html">Pest Control</a></li>
+        <li><a href="contact.html">Contact Experts</a></li>
+      </ul>
+
+    </div>
+
+    <a href="index.html" class="btn btn-ghost text-xl">
+      Agri Hub
+    </a>
+
+  </div>
+
+
+  <div class="navbar-center hidden lg:flex">
+
+    <ul class="menu menu-horizontal px-1 gap-1">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="farming-guides.html">Farming Guides</a></li>
+      <li><a href="crop-details.html">Crop Details</a></li>
+      <li><a href="pest-control.html">Pest Control</a></li>
+      <li><a href="contact.html">Contact Experts</a></li>
+    </ul>
+
+  </div>
+
+
+  <div class="navbar-end">
+
+    <a
+      href="contact.html"
+      class="btn btn-sm btn-success text-white"
+    >
+      Ask Expert
+    </a>
+
+  </div>
+
+</div>
+
+
+<!-- Page Header -->
+<section
+  class="bg-gradient-to-r from-neutral-50 to-stone-50 py-10 px-4"
+>
+
+  <div class="max-w-7xl mx-auto text-center">
+
+    <h1 class="text-4xl font-bold text-neutral-800">
+      Pest Control & IPM Strategies
+    </h1>
+
+    <p class="text-gray-700 mt-3 text-lg max-w-3xl mx-auto">
+      Learn how to identify common pests and diseases affecting crops,
+      trees, and livestock. Explore preventive methods, biological
+      controls, organic solutions, and Integrated Pest Management
+      practices.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- Main Content -->
+<div class="max-w-7xl mx-auto px-4 py-8">
+
+  <!-- Pest Information -->
+  <div class="flex justify-between items-center mb-6">
+
+    <p class="text-gray-600">
+      Available Pest and Disease Information
+    </p>
+
+  </div>
+
+
+  <!-- Pests Grid -->
+  <div
+    id="pestsContainer"
+    class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+  >
+
+    <div class="text-center py-10 col-span-full">
+      Loading pest and disease information...
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- Footer -->
+<footer class="bg-gray-100 text-center py-6 mt-10">
+
+  <p>
+    © <span id="live-date"></span>
+    Agri Hub - Supporting Better Farming
+  </p>
+
+</footer>
+
+
+<script type="module" src="./script.js"></script>
+
+
+  </body>
+</html>

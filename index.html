@@ -1,0 +1,248 @@
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Agri Hub | Home</title>
+
+    <meta
+      name="description"
+      content="Agricultural Information Hub for farming guides, crop information, pest management, and expert support."
+    />
+
+    <meta
+      name="keywords"
+      content="agriculture, farming, crops, pest management, farming guides"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Space Mono", sans-serif;
+        background: #fafaf9;
+      }
+
+      .btn-success,
+      .btn-primary {
+        background: #000000;
+        border-color: #000000;
+        color: #fff;
+      }
+
+      .btn-outline.btn-success {
+        background: transparent;
+        color: #000000;
+      }
+
+      .btn-outline.btn-success:hover {
+        background: #000000;
+        color: #fff;
+      }
+
+      * {
+        border-radius: 0 !important;
+      }
+    </style>
+  </head>
+
+  <body class="bg-base-100">
+
+    <!-- Navbar -->
+    <div class="navbar bg-base-100 shadow-md sticky top-0 z-50">
+
+      <div class="navbar-start">
+
+        <div class="dropdown">
+
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            ☰
+          </div>
+
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li><a href="index.html">Home</a></li>
+            <li><a href="farming-guides.html">Farming Guides</a></li>
+            <li><a href="crop-details.html">Crop Details</a></li>
+            <li><a href="pest-control.html">Pest Control</a></li>
+            <li><a href="contact.html">Contact Experts</a></li>
+          </ul>
+
+        </div>
+
+        <a href="index.html" class="btn btn-ghost text-xl">
+          Agri Hub
+        </a>
+
+      </div>
+
+      <div class="navbar-center hidden lg:flex">
+
+        <ul class="menu menu-horizontal px-1 gap-1">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="farming-guides.html">Farming Guides</a></li>
+          <li><a href="crop-details.html">Crop Details</a></li>
+          <li><a href="pest-control.html">Pest Control</a></li>
+          <li><a href="contact.html">Contact Experts</a></li>
+        </ul>
+
+      </div>
+
+      <div class="navbar-end">
+        <a href="contact.html" class="btn btn-sm btn-success text-white">
+          Ask Expert
+        </a>
+      </div>
+
+    </div>
+
+
+    <!-- Hero -->
+    <section class="hero min-h-[70vh] bg-gradient-to-br from-stone-50 to-white">
+
+      <div class="hero-content text-center">
+
+        <div class="max-w-3xl">
+
+          <h1 class="text-5xl font-bold text-stone-800">
+            Smart Farming Information Hub
+          </h1>
+
+          <p class="py-6 text-gray-700">
+            Discover useful farming information, crop growing techniques,
+            seasonal farming tips, and effective pest management solutions
+            to make better farming decisions.
+          </p>
+
+          <div class="flex gap-4 justify-center">
+
+            <a href="farming-guides.html" class="btn btn-primary">
+              Explore Farming Guides
+            </a>
+
+            <a href="contact.html" class="btn btn-outline btn-success">
+              Talk to an Expert
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Featured Sections -->
+    <section class="py-16 px-4 max-w-7xl mx-auto">
+
+      <h2 class="text-3xl font-bold text-center text-stone-800 mb-8">
+        Explore Our Farming Resources
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+
+        <!-- Farming Guides -->
+        <div class="card bg-base-100 shadow-xl border border-stone-100">
+
+          <div class="card-body">
+
+            <h3 class="card-title">
+              Farming Guides
+            </h3>
+
+            <p>
+              Learn practical farming methods, seasonal tips, crop care,
+              and useful techniques for better production.
+            </p>
+
+            <a href="farming-guides.html" class="btn btn-sm btn-primary">
+              Read Guides →
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- Crop Details -->
+        <div class="card bg-base-100 shadow-xl border border-stone-100">
+
+          <div class="card-body">
+
+            <h3 class="card-title">
+              Crop Information
+            </h3>
+
+            <p>
+              Explore information about different crops, including soil
+              requirements, growing methods, varieties, and harvesting.
+            </p>
+
+            <a href="crop-details.html" class="btn btn-sm btn-primary">
+              View Crops →
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- Pest Control -->
+        <div class="card bg-base-100 shadow-xl border border-stone-100">
+
+          <div class="card-body">
+
+            <h3 class="card-title">
+              Pest Management
+            </h3>
+
+            <p>
+              Identify common crop pests, learn prevention methods,
+              and discover practical pest management techniques.
+            </p>
+
+            <a href="pest-control.html" class="btn btn-sm btn-primary">
+              Learn More →
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 text-center py-6 mt-10">
+
+      <p>
+        © <span id="live-date"></span>
+        Agri Hub - Supporting Better Farming
+      </p>
+
+    </footer>
+
+
+    <script type="module" src="./script.js"></script>
+
+  </body>
+</html>
+```
